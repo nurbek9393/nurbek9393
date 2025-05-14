@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, ContextTypes, filters
 import os
 
-TOKEN = os.getenv("8068173082:AAHlRDqndqpiwt6uf0CAUMhuakU1g2d-r-I")  # Токен читается из переменных окружения
+TOKEN = os.getenv("TOKEN")  # Токен читается из переменных окружения
 
 async def handle_video(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.message.video:
